@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Cloud Detector</title>
+  <link href="styles/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="d-flex" id="wrapper">
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading" style="background-color: rgb(5, 150, 199);">Cloud Detector </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light"></a>
+      </div>
+    </div>
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact[E-mail us]</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="bg-primary text-white" style="max-height: 200px;padding-top: 100px; padding-bottom: 29px;">
+        <div class="container text-center ">
+          <h1>Welcome Here..</h1>
+          <p class="lead">A landing page for cloud detection</p>
+        </div>
+      </header>
+      <div class="para" style="color: darkgray; font-size: 20px; text-align: center;">
+        <p>
+          Description about satellite images will be titled here.
+        </p>
+      </div>
+      <div class="but"
+        style="margin: 10px; padding: 10px; border: cornflowerblue 3px; border-radius: 5px; word-spacing: 5px; padding-left: 140px;">
+        &nbsp;
+        &nbsp;
+        <button type="button" class="btn btn-outline-primary">True color</button>
+        <button type="button" class="btn btn-outline-secondary">band 1</button>
+        <button type="button" class="btn btn-outline-success">band 2</button>
+        <button type="button" class="btn btn-outline-danger">band 3</button>
+        <button type="button" class="btn btn-outline-warning">band 4</button>
+        <button type="button" class="btn btn-outline-info">band 5</button>
+        <button type="button" class="btn btn-outline-dark">band 6</button>
+        <button type="button" class="btn btn-outline-primary">band 7</button>
+      </div>
+      <div id="display-img"></div>
+      <div id="imageclouds">
+        <div id="classsify">
+          <button type="button" class="btn btn-outline-primary" style="width: 30em; margin: 1em;" onclick="document.getElementById('img1').src='images/image1.jpg'">taregeted image</button>
+          <!-- image insett cheyali-->
+          <img  id="img1" />
+        </div>
+        <div id="quality">
+          <button type="button" class="btn btn-outline-secondary" style="width: 30em; margin: 1em;" onclick="document.getElementById('img2').src='images/qimage.jpg'">quality assurance of satellite image using
+            rmask</button>
+            <img id="img2" />
+          <!-- image insert cheyai -->
+        </div>
+        <div id="compostie">
+          <button type="button" class="btn btn-outline-info" style="width: 30em; margin: 1em;" onclick="document.getElementById('img3').src='images/image2.jpg'">composite image</button>
+          <!-- image insert cheyail-->
+          <img id="img3"/>
+        </div>
+        <div id="masked">
+          <button type="button" class="btn btn-outline-info" style="width: 30em; margin: 1em;" onclick="document.getElementById('img4').src='images/image3.jpg'">masked satellite image</button>
+          <img id="img4"  />
+        </div>
+        <div id="clearcloud">
+          <button type="button" class="btn btn-outline-success" style="width: 30em; margin: 1em;" onclick="document.getElementById('img5').src='images/image4.jpg'">cloudless image</button>
+          <img id="img5" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="py-5 bg-dark">
+    <div class="container" style="position: relative;">
+      <p class="m-0 text-center text-white">Copyright &copy; Sastrites 2020</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
